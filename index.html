@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="assets/script.js"></script>
   <title>Weather Dashboard!</title>
 </head>
-<body>
-  <div>
-    <header>Weather Dashboard</header>
-  </div>
 
-  <div>
-    <h1>Search For a City:</h1>
-    <textarea placeholder="San Diego"></textarea>
-    <button>Search</button>
-  </div>
+<body class="row">
+  <h1 class="title-bar center blue">
+    Weather Dashboard
+  </h1>
+  <card class="dashboard col s4">
+
+    <div>
+      <h3>Search For a City:</h3>
+      <textarea placeholder="San Diego" class="text-box"></textarea>
+      <button class="search-button">Search</button>
+    </div>
+
+    <div class="searchhistory">
+
+    </div>
+  </card>
+
+  <card class="col s8 white">
+    <div class="todaysWeather grey lighten-1">
+      <h3 id="cityName">City Name</h3>
+      <h6 id="currentTemp">Current Temp</h6>
+      <img id="icon"></img>
+      <h6 id="currentWind">Current Wind Speed</h6>
+      <h6 id="currentHumidity">Current Humidity</h6>
+    </div>
+
+    <div class="future row blue">
+      <h4>5-Day Forcast</h4>
+      <div class="1day col s2">test</div>
+      <div class="2day col s2"></div>
+      <div class="3day col s2"></div>
+      <div class="4day col s2"></div>
+      <div class="5day col s2"></div>
+    </div>
+  </card>
+
 </body>
+
 </html>

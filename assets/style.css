@@ -1,0 +1,14 @@
+body {
+  background-color: gray;
+}
+
+.title-bar {
+  margin: 0;
+  padding: 15px;
+  background-image: linear-gradient(to right, red, yellow, blue);
+}
+
+.todaysWeather {
+  margin: 10px;
+  padding: 2px 5px;
+}
